@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
-    tailwindcss,
-    base: "/my-portfolio-asensi/",
+    tailwindcss
   ],
+  base: "/my-portfolio-asensi/"
 })

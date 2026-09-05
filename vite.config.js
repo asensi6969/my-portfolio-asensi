@@ -9,6 +9,3 @@ export default defineConfig({
   ],
   base: "/my-portfolio-asensi/"
 })
-
-  base: "/my-portfolio-asensi/",
-});

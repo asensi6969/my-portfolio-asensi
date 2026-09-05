@@ -6,7 +6,7 @@ const Experiences = () => {
     {
       position: 'Junior Application Developer',
       company: 'iRely Phillipines Inc',
-      period: 'June 2023- May 2026',
+      period: 'June 2023 - May 2026',
       description:
         'Contribute to the maintenance and development of software systems, including the Contracts Module for a CTRM Software System and the Accounts Receivable Module for an Enterprise Petroleum Distribution Software, with extensive experience in delivering full-stack features such as maintenance screens, search screens, reports, and other business functionalities, while applying strong problem-solving skills in troubleshooting, debugging, and analyzing applications to deliver reliable solutions within tight deadlines, collaborating closely with business analysts, project managers, and implementation consultants to align technical solutions with business requirements, leveraging AI-assisted development tools such as Cursor and Atlassian Rovo to improve productivity, accelerate deliverables, and enhance code quality, and utilizing Azure cloud technologies, CI/CD pipelines, and DevOps tools to support reliable application delivery, deployment, and infrastructure management.'
     },
@@ -20,44 +20,48 @@ const Experiences = () => {
   ]
 
   return (
-    <div className='text-white flex flex-col items-center'>
+    <div className='w-full text-white flex flex-col items-center px-2 sm:px-4 md:px-6'>
 
       {/* Page Title */}
-      <h1 className='text-4xl flex font-bold mb-10 text-center'>
+      <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-10 text-center'>
         My Experiences
       </h1>
 
       {/* Experience List */}
-      <div className='w-full max-w-4xl flex flex-col gap-6'>
+      <div className='w-full max-w-4xl flex flex-col gap-5 md:gap-6'>
 
         {experiences.map((experience, index) => (
 
           <div
             key={index}
-            className='w-full bg-[#0d1f16] border border-[#1c3a2b] rounded-xl p-6 hover:border-green-500 transition duration-300'
+            className='w-full min-w-0 bg-[#0d1f16] border border-[#1c3a2b] rounded-xl p-4 sm:p-5 md:p-6 hover:border-green-500 transition duration-300'
           >
 
             {/* Job Header */}
-            <div className='flex justify-between items-start gap-4'>
+            <div className='flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4'>
 
-              <div>
-                <h2 className='text-2xl font-semibold'>
+              {/* Job Information */}
+              <div className='min-w-0'>
+
+                <h2 className='text-xl sm:text-2xl font-semibold break-words'>
                   {experience.position}
                 </h2>
 
-                <p className='text-gray-400 mt-1'>
+                <p className='text-gray-400 mt-1 text-sm sm:text-base'>
                   {experience.company}
                 </p>
+
               </div>
 
-              <p className='text-gray-400 whitespace-nowrap'>
+              {/* Period */}
+              <p className='text-gray-400 text-sm sm:text-base whitespace-normal sm:whitespace-nowrap'>
                 {experience.period}
               </p>
 
             </div>
 
             {/* Job Description */}
-            <p className='text-gray-300 mt-5 leading-7'>
+            <p className='text-gray-300 mt-4 sm:mt-5 text-sm sm:text-base leading-6 sm:leading-7 break-words'>
               {experience.description}
             </p>
 

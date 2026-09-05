@@ -7,6 +7,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: "/my-portfolio-asensi/"
+})
 
   base: "/my-portfolio-asensi/",
 });

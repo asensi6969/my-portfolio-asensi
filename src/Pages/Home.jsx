@@ -63,8 +63,20 @@ const Home = () => {
         </div>
 
         {/* IMAGE SECTION */}
-        <div className="relative flex justify-center order-1 md:order-2">
 
+        
+         <div className="absolute top-20 right-20 
+                    w-[500px] h-[500px] 
+                    bg-green-500/20 
+                    rounded-full blur-[150px]" />
+
+            <div className="absolute bottom-0 left-20 
+                    w-[400px] h-[400px] 
+                    bg-emerald-700/20 
+                    rounded-full blur-[150px]" />
+        
+        <div className="relative flex justify-center order-1 md:order-2">
+    
           <img
             src={mainImg}
             alt="Angelo"
